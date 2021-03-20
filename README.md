@@ -35,3 +35,9 @@ $ export PYTHONPATH=$PWD/src:$PETSC_DIR/bin
 We gratefully acknowledge financial support from MINECO through the *Programa
 Estatal de Retos de I+D+i Orientada a los Retos de la Sociedad*, grant number
 DPI2016-75777-R AEI/FEDER, UE.
+
+
+
+Update:
++ travis.yml 
++ firedrake easy for install complex scalars version
