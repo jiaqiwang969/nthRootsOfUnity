@@ -121,11 +121,11 @@ class ResolventOperator(object):
 
         pc = self.R.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
         pc = self.RH.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
     def mult(self, A, x, y):
         f, q = self.I.getVecRight(), self.I.getVecRight()
@@ -169,11 +169,11 @@ class MatrixExponentialEuler(object):
 
         pc = self.iB.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
         pc = self.iBH.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
     def mult(self, A, x, y):
         q = self.I.getVecRight()
@@ -226,11 +226,11 @@ class MatrixExponentialAB2(object):
 
         pc = self.iM.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
         pc = self.iMH.getPC()
         pc.setType('lu')
-        pc.setFactorSolverPackage('mumps')
+        pc.setFactorSolverType('mumps')
 
     def mult(self, A, x, y):
         q0, q1  = self.I.getVecRight(), self.I.getVecRight()
