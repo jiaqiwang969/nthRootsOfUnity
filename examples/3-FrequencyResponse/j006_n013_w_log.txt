@@ -1,0 +1,17 @@
+n-periodic case
+  1 SVD nconv=1 first unconverged value (error) 0.359145 (2.58924083e-06)
+******************************
+*** SLEPc Solution Results ***
+******************************
+
+Singular vectors will be written
+Solution method: cross
+Number of iterations of the method: 1
+Number of requested singular values: 1
+Stopping condition: tol=1e-08, maxit=49374
+Number of converged approximate singular triplets 1
+
+  w     j    n    i      sigma     residual norm 
+-----  ---  ---  ---  ----------  ---------------
+10.00  006  013  000   0.499161      5.25288e-13
+

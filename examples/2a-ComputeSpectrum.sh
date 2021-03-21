@@ -13,7 +13,7 @@ export NSTR=$(printf %03d $N)
 set +ex
 
 pushd 2-Spectrum
-mpiexec -n 18 python -u ../../src/modes_qep.py $OPTS -pep_target 0.99999+0.0108i | tee v_j${JSTR}_n${NSTR}_log.txt 2>&1
+mpiexec -n 1 python -u ../../src/modes_qep.py $OPTS -pep_target 0.99999+0.0108i | tee v_j${JSTR}_n${NSTR}_log.txt 2>&1
 grep -P '^\d+' v_j${JSTR}_n${NSTR}_log.txt > v_j${JSTR}_n${NSTR}_spectrum.txt
 popd
 
